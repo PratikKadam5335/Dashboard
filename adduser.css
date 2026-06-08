@@ -51,6 +51,24 @@ border-radius:10px;
 }
 
 
+.main-form-button{
+        width: 100px;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background: #d5c7ea;
+transition:1s;
+}
+
+
+.main-form-button:hover{
+    
+    background: white;
+}
+
+
+
+
 
 
 
