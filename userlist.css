@@ -1,0 +1,61 @@
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.main-table{
+width:100%;
+height:100vh;
+background-color:red;
+
+}
+
+
+.adduser-title{
+
+    display: flex;
+    gap: 716px;
+    margin-bottom: 53px;
+
+}
+
+.adduser-title button{
+
+    background-color: #a3a3ef;
+    width: 105px;
+    border: 1px solid grey;
+    border-radius: 11px;
+    height: 39px;
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+transition:0.5;
+
+}
+
+
+.adduser-title button:hover{
+background-color:white;
+
+}
+
+
+
+
+
+

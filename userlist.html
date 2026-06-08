@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-    <title>Dashboard</title>
+    <title>Userlist</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 
    <link rel ="stylesheet" href="dashboard.css"/>
+   <link rel ="stylesheet" href="userlist.css"/>
+
+
+
+
 
 
 </head>
@@ -18,7 +23,7 @@
 
     <ul>
         <li><a href=""><span style="font-size: 25px;font-weight: bold;">👤 User</span></a></li>
-        <li><a href="dashboard.html">User Profile</a></li>
+        <li><a href="">User Profile</a></li>
         <li><a href="adduser.html">Add user</a></li>
         <li><a href="userlist.html">User List</a></li>
     </ul>
@@ -68,40 +73,12 @@
 
 <section class="first-section">
 
-<div class="profile">
-
-<h2>Welcome Emay Walter!</h2>
-
-<h4>Here whats happing in your account today</h4>
-
-<button>View Profile</button>
-
-</div>
 
 
+<div class="adduser-title">
+<h2>User List</h2>
 
-<div class="first-div">
-
-
-
-	<div class="first-div2">
-
-		<h3>$45,195</h3>
-		<h5>Revenue</h5>
-
-	</div>
-
-
-<div class="first-div2">
-
-<h3>80%</h3>
-		<h5>Profit</h5>
-
-	</div>
-
-
-
-
+<a href = "adduser.html"><button>+Add User</button></a>
 
 </div>
 
@@ -110,84 +87,48 @@
 
 
 
+<table>
+  <tr>
+    <th>name</th>
+    <th>email</th>
+    <th>role</th>
+<th>creation date</th>
+<th>status</th>
 
 
+<th colspan=2>action</th>
 
 
-<div class="first-div">
+  </tr>
 
-<div class="first-div2">
-<h3>845+</h3>
-		<h5>Customers</h5>
-
-
-	</div>
-
-
-<div class="first-div2">
-<h3>$45,195</h3>
-		<h5>10.905</h5>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+ <td>Maria Anders</td>
+    <td>Germany</td>
 
 
-	</div>
+<td>
+<button>Delete<button>
+</td>
 
 
+<td>
+<button>Update<button>
+
+</td>
+
+  </tr>
 
 
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="second-section">
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-
-<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
-
-<script>
-const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-const yValues = [55, 49, 44, 24, 15];
-const barColors = ["red", "green","blue","orange","brown"];
-
-new Chart("myChart", {
-  type: "bar",
-  data: {
-    labels: xValues,
-    datasets: [{
-      backgroundColor: barColors,
-      data: yValues
-    }]
-  },
-  options: {
-    legend: {display: false},
-    title: {
-      display: true,
-      text: "World Wine Production 2018"
-    }
-  }
-});
-</script>
-</section>
+</table>
 
 
 
 
 
-
+<section>
 
 
 
